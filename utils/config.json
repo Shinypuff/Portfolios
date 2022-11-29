@@ -1,0 +1,30 @@
+{
+	"start_date": "2018-10-23",
+	"end_date": "2022-10-31",
+	"riskless_rate": 0.03,
+	"n_clusters": 11,
+	"n_stock_portfolio": 2,
+	"random_state": 42,
+
+	"ticker_companies": "data/sp500_tickers.csv",
+	"tickers_sectors_path": "data/ticker_sectors.csv",
+	"ticker_data_close": "data/ticker_data_Close.csv",
+	"ticker_data_sp500": "data/ticker_data_SP500.csv",
+	"ticker_data_volume": "data/ticker_data_Volume.csv",
+
+	"ticker_data_preprocessed": "data/ticker_data_preprocessed.csv",
+	"features_path": "data/features.csv",
+
+	"nn_mlp_checkpoint":"autoencoders/lightning_logs/mlp/version_2/checkpoints/epoch=149-step=24749.ckpt",
+	"nn_lstm_checkpoint":"autoencoders/lightning_logs/lstm/version_2/checkpoints/epoch=99-step=14699.ckpt",
+	"nn_conv_checkpoint":"autoencoders/lightning_logs/cae/version_2/checkpoints/epoch=99-step=16499.ckpt",
+	"nn_mlp_data":"data/ticker_data_mlp.csv",
+	"nn_lstm_data":"data/ticker_data_lstm.csv",
+	"nn_conv_data":"data/ticker_data_cae.csv",
+
+	"metrics_path": "results/metrics_table.csv",
+	"predictions_path": "results/prediction_table.csv",
+	"params_path": "results/params_df.csv",
+	"port_metrics_path": "results/port_metrics.csv",
+	"best_metrics_path": "results/best_metrics.csv"
+}
