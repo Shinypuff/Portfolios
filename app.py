@@ -26,24 +26,6 @@ mpl.rcParams['axes.spines.top'] = False
 metr = pd.read_excel('metrics_all.xlsx')
 prices = pd.read_excel('metrics_price.xlsx')
 
-# df['Phy'] = df['Phy'].replace('-', '0').astype('int')
-
-# data = pd.DataFrame(df, columns = ['Type', 'Phy', 'Wgt'])
-# data_calc = data.groupby(['Type'], as_index=False)
-# group_result = data_calc.agg({'Phy':'mean', 'Wgt':'mean'})
-
-# bins = [0, 5, 12, 21]
-# group_result['Wgt'] = pd.cut(group_result['Wgt'], bins, labels=names)
-
-# damage_selector = dcc.RangeSlider(
-#     id = 'range-slider',
-#     min = min(data['Phy']),
-#     max = max(data['Phy']),
-#     marks = {0: '0', 100: '100', 400: '400', max(data['Phy']): '700'},
-#     step = 20,
-#     value = [0, 700]
-# )
-
 ports = list(metr['index'].unique())
 meth = list(metr['Method'].unique())
 
