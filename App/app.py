@@ -136,7 +136,7 @@ app.layout = html.Div([
      Input(component_id='method_selector', component_property='value')]
 )
 
-def get_srez(port,metrics ,method):
+def get_srez(port, metrics, method):
 
     melted = prices.melt(id_vars=['Date', 'Method'])
 
